@@ -4,7 +4,9 @@ title: "WiPsy.HAW.Bayern"
 #bibliography: library.bib
 format:
   revealjs: 
-    theme: night
+    theme: 
+      - night
+      - mytheme.css
     menu:
       side: left
     slide-number: true
