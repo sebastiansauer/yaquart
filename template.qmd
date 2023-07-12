@@ -1,6 +1,6 @@
 ---
-title: "WiPsy.HAW.Bayern"
-#subtitle: "Ein sanfter Einstieg in die KI</br>CC-BY"
+title: "Title of the presentation"
+#subtitle: "subtitle</br>CC-BY"
 #bibliography: library.bib
 format:
   revealjs: 
@@ -33,6 +33,60 @@ editor_options:
 ![](img/qr-talk.png)<https://sebastiansauer.github.io/talks/wipsy-bayern-2023/#/title-slide/>
 
 :::
+
+
+
+## Two columns, differenty layout
+
+
+::: {layout="[[10, 90]]"}
+</br> {{< fa crosshairs size=2xl >}}
+
+
+
+To provide applied researcher a template for speech classification
+:::
+
+
+See <https://quarto.org/docs/authoring/figures.html#complex-layouts> for more details.
+
+
+
+## Two columns
+
+
+
+::: {layout-ncol=2}
+
+
+{{< fa crosshairs size=2xl >}}
+
+To provide applied researcher a template for speech classification
+:::
+
+
+
+
+## Mermaid diagram
+
+Machine learning standard pipeline
+
+</br>
+
+```{mermaid}
+flowchart LR
+prepData[Import and </br>prepare data]  --> folds
+subgraph folds[for each fold do]
+  subgraph tune[for each tune value do]
+    direction TB
+    prep2[prepare data] --> fit[fit model] --> predict[predict on</br>assessment data]
+  end
+end
+folds --> fit2[fit on train data]
+fit2 -->pred2[predict on test data]
+pred2 --> performance[assess</br>performance]
+
+```
 
 
 
